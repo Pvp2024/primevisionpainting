@@ -37,11 +37,13 @@
               <div class="services-container">
                   <div class="service-item">
                       <h3>Interior Painting</h3>
-                      <p>Revitalize your living spaces with our expert interior painting services.</p>
+                      <p>we believe that the interior of your home or business should reflect your unique style while maintaining durability and longevity. Our expert team of painters brings years of experience and attention to detail to every project, ensuring a flawless finish that enhances your space.
+                      </p>
                   </div>
                   <div class="service-item">
                       <h3>Exterior Painting</h3>
-                      <p>Enhance your home's curb appeal with a fresh, new exterior look.</p>
+                      <p>we understand that the exterior of your home or business is the first thing people notice. That’s why we take pride in offering top-notch exterior painting services that not only enhance your property’s curb appeal but also provide long-lasting protection against the elements.
+</p>
                   </div>
                   <div class="service-item">
                       <h3>Commercial Painting</h3>
@@ -121,73 +123,61 @@
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-38c11dbd-dcc7-4dbe-83d5-36da477f4a24" data-elfsight-app-lazy></div>
 
-        <!-- Contact Form -->
-        <form id="contact-form" class="contact-form" aria-labelledby="contact-form-heading">
-            <fieldset>
-                <legend id="contact-form-heading" class="visually-hidden">Contact Form</legend> <!-- Accessible label -->
-                <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
-                <input type="tel" id="number" name="number" placeholder="Your Phone Number" required aria-label="Your Phone Number">
-            </div>
-        </div>
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form" aria-labelledby="contact-form-heading" method="POST" action="/send-email">
+          <fieldset>
+              <legend id="contact-form-heading" class="visually-hidden">Contact Form</legend> <!-- Accessible label -->
+              <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+              <input type="tel" id="number" name="number" placeholder="Your Phone Number" required aria-label="Your Phone Number">
+          </fieldset>
 
-        <section class="app">
-            <i class="fa fa-rocket"></i>
-            <h1>It's time to <span class="blue-color">refresh</span></h1>
-            <h3 class="gray-color">Get Your Estimate Today</h3>
-            <article class="feature1">
-              <input type="checkbox" id="feature1"/>
-              <div>
-                <span>
-                  Free Estimate<br/>
-                  
-                </span>
-              </div>
-            </article>
-            
-            <article class="feature2">
-              <input type="checkbox" id="feature2"/>
-              <div>
-                <span>
-                  residential<br/>
-                  
-                </span>
-              </div>
-            </article>
-            
-            <article class="feature3">
-              <input type="checkbox" id="feature3"/>
-              <div>
-                <span>
-                  Commercial<br/>
-                  
-                </span>
-              </div>
-            </article>
-            
-            <article class="feature4">
-              <input type="checkbox" id="feature4" >
-              <div>
-                <span>
-                  Call Me<br/>
-                  
-                </span>
-              </div>
-            </article>
-            
-            <h3>
-              <span class="blue-color">10% </span>discount end 09/30/2024!
-            </h3>
-            
-            <a href="#" class="upgrade-btn">Submit</a>
-            
-            <div class="gray-color">terms & conditions apply, the app will never share your private info</div>
+          <section class="app">
+              <i class="fa fa-rocket"></i>
+              <h1>It's time to <span class="blue-color">refresh</span></h1>
+              <h3 class="gray-color">Get Your Estimate Today</h3>
+              <article class="feature1">
+                  <input type="checkbox" id="feature1" name="feature1" value="Free Estimate"/>
+                  <div>
+                      <span>Free Estimate<br/></span>
+                  </div>
+              </article>
+                
+              <article class="feature2">
+                  <input type="checkbox" id="feature2" name="feature2" value="Residential"/>
+                  <div>
+                      <span>residential<br/></span>
+                  </div>
+              </article>
+                
+              <article class="feature3">
+                  <input type="checkbox" id="feature3" name="feature3" value="Commercial"/>
+                  <div>
+                      <span>Commercial<br/></span>
+                  </div>
+              </article>
+                
+              <article class="feature4">
+                  <input type="checkbox" id="feature4" name="feature4" value="Call Me">
+                  <div>
+                      <span>Call Me<br/></span>
+                  </div>
+              </article>
+                
+              <h3>
+                  <span class="blue-color">10% </span>discount end 09/30/2024!
+              </h3>
+                
+              <button type="submit" class="upgrade-btn">Submit</button>
+                
+              <div class="gray-color">terms & conditions apply, the app will never share your private info</div>
           </section>
-          
-          <div class="social">
-            <a href="https://www.linkedin.com/in/florin-cornea-b5118057/" target="_blank">
+      </form>
+
+      <div class="social">
+          <a href="https://www.linkedin.com/in/florin-cornea-b5118057/" target="_blank">
               <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
+          </a>
+      </div>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -198,3 +188,5 @@
     <script src="scripts.js" defer></script>
 </body>
 </html>
+
+npm install express nodemailer
